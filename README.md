@@ -49,6 +49,7 @@ This project was created as a final-year research initiative titled **"An Overvi
 
 ## 📁 Project Structure
 
+```bash
 DeepFake-Detection-And-Mitigation/
 ├── deploy/
 │ ├── main.py # Main pipeline script
@@ -64,6 +65,7 @@ DeepFake-Detection-And-Mitigation/
 ├── requirements.txt # Python package dependencies
 ├── .gitignore # Git ignore rules
 └── README.md # Project documentation
+```
 
 ---
 
@@ -95,45 +97,49 @@ source venv/bin/activate
     Install Required Packages
 
 pip install -r requirements.txt
+```
 
-▶️ Usage
+### ▶️ Usage
 
-    Prepare your dataset
+- Prepare your dataset
 
-        Place real and fake video samples into respective folders (modify paths inside the code accordingly).
+  - Place real and fake video samples into respective folders (modify paths inside the code accordingly).
 
-    Run the main script
+- Run the main script
 
-python deploy/main.py
+- python deploy/main.py
 
-    View Output
+  - View Output
 
-        Results are rendered on a web interface, served via Flask on http://localhost:5000, using upload.html.
+    - Results are rendered on a web interface, served via Flask on http://localhost:5000, using upload.html.
 
-        Optionally, Prediction outcomes and relevant metadata are displayed directly in the browser. You can customize this interface to include graphs or confidence scores using Matplotlib or frontend charts.
+    - Optionally, Prediction outcomes and relevant metadata are displayed directly in the browser. You can customize this interface to include graphs or confidence scores using Matplotlib or frontend charts.
 
-🗃️ Dataset
+### 🗃️ Dataset
 
-You can use open-source datasets such as:
+- You can use open-source datasets such as:
 
-    FaceForensics++
+  - FaceForensics++
 
-    DFDC (DeepFake Detection Challenge Dataset)
+  - DFDC (DeepFake Detection Challenge Dataset)
 
 Make sure to preprocess the videos using extract_features.py before feeding into the model.
-🧠 Model Architecture
 
-The model is a CNN-based architecture trained on extracted frames. It includes:
+#### 🧠 Model Architecture
 
-    Convolutional layers
+- The model is a CNN-based architecture trained on extracted frames. It includes:
 
-    Batch normalization
+  - Convolutional layers
 
-    Dropout for regularization
+  - Batch normalization
 
-    Dense layers with sigmoid activation for binary classification
+  - Dropout for regularization
+
+  - Dense layers with sigmoid activation for binary classification
 
 You can modify or improve the model in deploy/model.py.
+
+<!--
 # 📊 Results
 
 #     Training Accuracy: ~92%
@@ -143,40 +149,44 @@ You can modify or improve the model in deploy/model.py.
 #     Binary Cross-Entropy Loss used as the loss function
 
 #     Evaluation metrics: Precision, Recall, F1-Score
+-->
 
-Note: Actual results may vary based on dataset and preprocessing.
-🤝 Contributing
+**Note:** Actual results may vary based on dataset and preprocessing.
 
-Contributions, issues, and feature requests are welcome!
+###### 🤝 Contributing
 
-To contribute:
+- Contributions, issues, and feature requests are welcome!
 
-    Fork the repo
+### To contribute:
 
-    Create a new branch (git checkout -b feature/your-feature)
+    - Fork the repo
 
-    Commit your changes
+    - Create a new branch (git checkout -b feature/your-feature)
 
-    Push to the branch
+    - Commit your changes
 
-    Open a pull request
+    - Push to the branch
 
-📄 License
+    - Open a pull request
+
+<!--
+### 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-🙏 Acknowledgements
+-->
 
-    TensorFlow
+### 🙏 Acknowledgements
 
-    Keras
+- TensorFlow
 
-    OpenCV
+- Keras
 
-    Research papers and community discussions around Deepfake detection
+- OpenCV
 
-👨‍💻 Author
+- Research papers and community discussions around Deepfake detection
+
+## 👨‍💻 Author
 
 Akash Kumar
 Final Year CSE Student | Deep Learning Enthusiast
 GitHub
-```
