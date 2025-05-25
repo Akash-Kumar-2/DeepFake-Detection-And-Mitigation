@@ -84,13 +84,20 @@ DeepFake-Detection-And-Mitigation/
 ```bash
 git clone https://github.com/Akash-Kumar-2/DeepFake-Detection-And-Mitigation.git
 cd DeepFake-Detection-And-Mitigation
+```
 
-    Set up a Virtual Environment
+2. **Set up a Virtual Environment**
 
+```bash
 python -m venv venv
-# Activate the environment
+```
+
+3. **Activate the environment**
+
+```bash
 # Windows
 venv\Scripts\activate
+
 # macOS/Linux
 source venv/bin/activate
 
@@ -192,7 +199,11 @@ Akash Kumar
 ### 📸 Glimpse of The Project
 
 ![Image](https://github.com/user-attachments/assets/da5adac2-f1a9-48a1-8529-9d8f86bee7ec)
+
 ![Image](https://github.com/user-attachments/assets/81752e1a-c266-4ca8-8ad6-d22caabae2c3)
+
 ![Image](https://github.com/user-attachments/assets/9b2904e9-e534-4e7e-b6f4-cee84e367537)
+
 ![Image](https://github.com/user-attachments/assets/f5c04c3e-90a6-4455-8e09-b17a44dad8bc)
+
 ![Image](https://github.com/user-attachments/assets/b5e0d7d5-de9f-46ef-9f0f-a9fee31bf80b)
