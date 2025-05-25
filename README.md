@@ -188,5 +188,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👨‍💻 Author
 
 Akash Kumar
-Final Year CSE Student | Deep Learning Enthusiast
-GitHub
+
+### 📸 Glimpse of The Project
+
+![Image](https://github.com/user-attachments/assets/d5095772-d56a-4add-9243-b114d0cb0d41)
+![Image](https://github.com/user-attachments/assets/cfe9c940-d3b0-4be7-a417-39fafe42f150)
+![Image](https://github.com/user-attachments/assets/77d777b3-eb4d-415d-850c-b6c724574afb)
+![Image](https://github.com/user-attachments/assets/8701522b-cc6c-4c0a-aaac-835603f8e1f3)
+![Image](https://github.com/user-attachments/assets/5d08958b-7d7f-44c6-873f-642feface8dc)
