@@ -191,8 +191,8 @@ Akash Kumar
 
 ### 📸 Glimpse of The Project
 
-![Image](https://github.com/user-attachments/assets/d5095772-d56a-4add-9243-b114d0cb0d41)
-![Image](https://github.com/user-attachments/assets/cfe9c940-d3b0-4be7-a417-39fafe42f150)
-![Image](https://github.com/user-attachments/assets/77d777b3-eb4d-415d-850c-b6c724574afb)
-![Image](https://github.com/user-attachments/assets/8701522b-cc6c-4c0a-aaac-835603f8e1f3)
-![Image](https://github.com/user-attachments/assets/5d08958b-7d7f-44c6-873f-642feface8dc)
+![Image](https://github.com/user-attachments/assets/da5adac2-f1a9-48a1-8529-9d8f86bee7ec)
+![Image](https://github.com/user-attachments/assets/81752e1a-c266-4ca8-8ad6-d22caabae2c3)
+![Image](https://github.com/user-attachments/assets/9b2904e9-e534-4e7e-b6f4-cee84e367537)
+![Image](https://github.com/user-attachments/assets/f5c04c3e-90a6-4455-8e09-b17a44dad8bc)
+![Image](https://github.com/user-attachments/assets/b5e0d7d5-de9f-46ef-9f0f-a9fee31bf80b)
