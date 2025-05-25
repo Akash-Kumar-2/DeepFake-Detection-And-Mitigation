@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <title>DeepFake Video Detection</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='upload.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header with Logo and Navigation -->
+    <header class="main-header">
+      <div class="logo-container">
+        <img
+          src="{{ url_for('static', filename='logo.png') }}"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#mitigate">Mitigate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="content-wrapper">
+        <!-- Left Side Image -->
+        <div class="left-image" id="leftImage">
+          <img
+            src="{{ url_for('static', filename='DeepFake.jpg') }}"
+            alt="DeepFake Image"
+          />
+        </div>
+
+        <!-- Right Side Main Section -->
+        <div class="main-content">
+          <h1>DeepFake Video Detection</h1>
+          <p class="subtitle">Upload a video to detect if it's REAL or FAKE</p>
+
+          <section class="upload-section">
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <div class="flash-messages">
+              {% for message in messages %}
+              <p>{{ message }}</p>
+              {% endfor %}
+            </div>
+            {% endif %} {% endwith %} {% if filename %}
+            <div class="video-container">
+              <video autoplay controls preload width="400" height="300">
+                <source
+                  src="{{ url_for('display_video', filename=filename) }}"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            {% endif %}
+
+            <form
+              method="post"
+              action="/"
+              enctype="multipart/form-data"
+              class="upload-form"
+            >
+              <label for="file">Choose a video file</label>
+              <input type="file" id="file" name="file" required />
+              <input class="btn upload" type="submit" value="Upload" />
+            </form>
+
+            {% if filename %}
+            <form
+              method="get"
+              action="{{ url_for('sequence_prediction', filename=filename) }}"
+            >
+              <input class="btn analyze" type="submit" value="Analyze" />
+            </form>
+            {% endif %}
+
+            <p id="res">{{ prediction }}</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer (your original one) -->
+    <footer class="footer">
+      <p>© 2025 DeepFake Detection. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to Change Color of Prediction -->
+    <script>
+      document
+        .querySelector(".upload-form")
+        .addEventListener("submit", function () {
+          document.getElementById("leftImage").classList.add("hidden");
+        });
+      const res = document.getElementById("res");
+      const text = res.innerHTML.trim().toUpperCase();
+      if (text === "REAL") res.style.color = "green";
+      else if (text === "FAKE") res.style.color = "red";
+      else res.style.color = "black";
+    </script>
+  </body>
+</html>

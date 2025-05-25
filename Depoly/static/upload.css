@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f6fa;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a;
+  padding: 1em 2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Hide the left image when the form is submitted */
+.hidden {
+  display: none;
+}
+
+/* Title Section */
+.title-section {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.title-section h1 {
+  font-size: 2.5em;
+  color: #3f1e8a;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Upload Section */
+.upload-section {
+  text-align: center;
+}
+
+.video-container {
+  margin: 1.5em 0;
+}
+
+input[type="file"] {
+  margin: 1em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.btn {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload {
+  background-color: #f39c12;
+  color: white;
+  margin-right: 10px;
+}
+
+.upload:hover {
+  background-color: #e67e22;
+}
+
+.analyze {
+  background-color: #3f1e8a;
+  color: white;
+}
+
+.analyze:hover {
+  background-color: #2c1572;
+}
+
+/* Result Styling */
+#res {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 1.2em;
+}
+
+/* Flash Messages */
+.flash-messages p {
+  background-color: #ffdddd;
+  border-left: 5px solid red;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  color: #900;
+}
+
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 3em;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 1.5em;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* spacing between left and right */
+  flex-wrap: wrap; /* responsive: stack on small screens */
+}
+
+.left-image img {
+  width: 300px; /* adjust size as needed */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers text and content */
+  justify-content: center; /* Centers the content vertically */
+  text-align: center; /* Centers text horizontally */
+}
+
+/* Make sure existing .container width is wide enough */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
