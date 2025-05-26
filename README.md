@@ -192,10 +192,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Research papers and community discussions around Deepfake detection
 
-## 👨‍💻 Author
-
-Akash Kumar
-
 ### 📸 Glimpse of The Project
 
 ![Image](https://github.com/user-attachments/assets/da5adac2-f1a9-48a1-8529-9d8f86bee7ec)
@@ -207,3 +203,10 @@ Akash Kumar
 ![Image](https://github.com/user-attachments/assets/f5c04c3e-90a6-4455-8e09-b17a44dad8bc)
 
 ![Image](https://github.com/user-attachments/assets/b5e0d7d5-de9f-46ef-9f0f-a9fee31bf80b)
+
+## 👨‍💻 Authors
+
+- Akash Kumar
+- Akash Mishra
+- Harshit Ralhan
+- Ashish Kasaudhan
